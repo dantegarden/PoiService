@@ -1,0 +1,13 @@
+image: hub.docker.dvt.io:5000/devops/poi:latest
+variables:
+   GIT_STRATEGY: none
+stages:
+   - build
+b1:
+  stage: build
+  script:
+    - "docker exec --user=tomcat poi  bash -c 'cd ~ && /bin/sh update.sh'"
+  tags:
+    - builder
+  only:
+    - master
