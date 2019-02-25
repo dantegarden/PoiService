@@ -1,5 +1,5 @@
 # Excel子服务
-**项目负责人**：李倞 @lijing
+**项目负责人**：李倞 @lij
 
 **镜像**：hub.docker.dvt.io:5000/devops/poi:latest
 
